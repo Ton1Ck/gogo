@@ -143,6 +143,7 @@ body {
 		position: fixed;
 		left: -100%;
 		top: 0;
+		overflow: hidden;
 		width: 100%;
 		height: 100%;
 		background-color: #eee;
@@ -151,6 +152,15 @@ body {
 	}
 	.header:target .menu__body{
 		left: 0;
+	}
+	.header:target .menu__body::before{
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 80px;
+		width: 100%;
+		background-color: #fff;
 	}
 	.menu__item {
 		margin: 0px 0px 25px 0px;
@@ -167,7 +177,6 @@ body {
 		color: #fff;
 		font-size: 20px;
 	}
-
 }
 @media (max-width:479.98px) {
 	.header__logo {
@@ -228,15 +237,15 @@ body {
 		content: "";
 		background-color: #000;
 		height: 2px;
-			}
+		}
 	.icon-menu-close {
 		display: none;
 	}
 	.icon-menu-close::before{
-		transform: rotate(-35deg);
+		transform: rotate(-45deg);
 	}
 	.icon-menu-close::after{
-		transform: rotate(42deg);
+		transform: rotate(45deg);
 	}
 	.header:target .icon-menu{
 		display: none;
@@ -244,4 +253,40 @@ body {
 	.header:target .icon-menu-close{
 		display: flex;
 	}
+}
+
+/*   ++++++++++++    GET STARTED       ++++++++++++++*/
+.get-started {
+}
+.get-started__container {
+}
+.get-started__content {
+}
+.get-started__block-text {
+}
+.block-text {
+}
+.block-text__title {
+}
+.block-text__title_blue {
+}
+.block-text__text {
+}
+.block-text__button {
+}
+.button {
+}
+.get-started__video {
+}
+.video-get-started {
+}
+.video-get-started__icon {
+}
+.video-get-started__body {
+}
+.video-get-started__title {
+}
+.video-get-started__text {
+}
+.get-started__image {
 }
